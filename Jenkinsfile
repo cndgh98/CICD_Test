@@ -4,7 +4,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("cndgh98/df")
+         app = docker.build("cndgh98/cicdtest")
      }
      stage('Push image') {
          docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
@@ -15,7 +15,7 @@ node {
 }
 
 stage('Build image') {
-  app = docker.build("cndgh98/df")
+  app = docker.build("cndgh98/cicdtest")
 }
 
 stage('Push image') {
