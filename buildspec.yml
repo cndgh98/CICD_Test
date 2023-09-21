@@ -4,7 +4,7 @@ env:
   variables:
     AWS_DEFAULT_REGION: ap-northeast-2
     AWS_ACCOUNT_ID: 240598068835
-    IMAGE_REPO_NAME: nginx-fargate
+    IMAGE_REPO_NAME: cicdweb
     IMAGE_TAG: latest
 
 phases:
